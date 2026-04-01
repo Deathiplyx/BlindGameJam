@@ -1,0 +1,1452 @@
+{
+  "scene1_start": {
+    "audio": [
+      {
+        "file": "ambience/apartment.wav",
+        "text": "The apartment hums quietly. A refrigerator drones. Morning stillness.",
+        "type": "environment",
+        "pan": "center"
+      },
+      {
+        "file": "sfx/phone_ring.wav",
+        "text": "The phone rings. Once. Twice. Three times.",
+        "type": "voice",
+        "pan": "right"
+      },
+      {
+        "file": "sfx/phone_click.wav",
+        "text": "The call connects.",
+        "type": "voice",
+        "pan": "right"
+      },
+      {
+        "file": "voices/hospital_call.wav",
+        "text": "It's the hospital. You need to come in. It's your father, Thomas Reed. Please hurry.",
+        "type": "voice",
+        "pan": "right"
+      },
+      {
+        "file": "sfx/phone_click.wav",
+        "text": "The call disconnects.",
+        "type": "voice",
+        "pan": "right"
+      },
+      {
+        "file": "sfx/mango_squawk_burst.wav",
+        "text": "Mango squawks loudly six times.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_go_now.wav",
+        "text": "SQUAWK. Hospital. Father. Thomas. SQUAWK GO NOW.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_always_here.wav",
+        "text": "Squawk... Mango is here. Mango is always here. Thomas needs us. Squawk.",
+        "type": "voice",
+        "pan": "left"
+      }
+    ],
+    "choices": {
+      "what should I do": "scene1_room_description",
+      "help": "scene1_room_description",
+      "let's go": "scene1_room_description",
+      "let's leave": "scene1_room_description",
+      "leave": "scene1_room_description",
+      "go": "scene1_room_description",
+      "proceed": "scene1_room_description",
+      "repeat": "scene1_start",
+      "again": "scene1_start",
+      "say again": "scene1_start"
+    },
+    "look": [
+      {
+        "file": "sfx/mango_chirp.wav",
+        "text": "Mango chirps and ruffles his feathers importantly.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_describe_apartment.wav",
+        "text": "SQUAWK. Okay! Looking! There is... the warm humming box. The tall cold box. The soft sitting things. Mango's perch. SQUAWK. Also the whooshy rectangle and the flat cold thing with jingly things on it. SQUAWK. That is everything. Very good description. Thomas is waiting. SQUAWK.",
+        "type": "voice",
+        "pan": "left"
+      }
+    ]
+  },
+  "scene1_room_description": {
+    "audio": [
+      {
+        "file": "sfx/mango_chirp.wav",
+        "text": "Mango chirps three ascending notes.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_two_things.wav",
+        "text": "SQUAWK. Home! Warm place. Smells like coffee and shoes and Mango. Two things. Need two things before door. Thomas is waiting. SQUAWK.",
+        "type": "voice",
+        "pan": "left"
+      }
+    ],
+    "choices": {
+      "what two things": "scene1_hint",
+      "what are the two things": "scene1_hint",
+      "what do i need": "scene1_hint",
+      "keys": "scene1_get_keys",
+      "kitchen": "scene1_get_keys",
+      "counter": "scene1_get_keys",
+      "jingly": "scene1_get_keys",
+      "jingly things": "scene1_get_keys",
+      "cane": "scene1_get_cane_no_keys",
+      "kane": "scene1_get_cane_no_keys",
+      "stick": "scene1_get_cane_no_keys",
+      "tappy stick": "scene1_get_cane_no_keys",
+      "door": "scene1_need_items",
+      "leave": "scene1_need_items",
+      "outside": "scene1_need_items",
+      "repeat": "scene1_room_description",
+      "again": "scene1_room_description",
+      "say again": "scene1_room_description",
+      "what did you say": "scene1_room_description"
+    },
+    "look": [
+      {
+        "file": "sfx/mango_chirp.wav",
+        "text": "Mango chirps and ruffles his feathers importantly.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_describe_apartment.wav",
+        "text": "SQUAWK. Okay! Looking! There is... the warm humming box. The tall cold box. The soft sitting things. Mango's perch. SQUAWK. Also the whooshy rectangle and the flat cold thing with jingly things on it. SQUAWK. That is everything. Very good description. Thomas is waiting. SQUAWK.",
+        "type": "voice",
+        "pan": "left"
+      }
+    ]
+  },
+  "scene1_hint": {
+    "audio": [
+      {
+        "file": "sfx/mango_chirp.wav",
+        "text": "Mango chirps.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_hint.wav",
+        "text": "Jingly things! And tappy stick! Jingly things on the cold flat thing in the food room. Tappy stick by the whooshy rectangle. SQUAWK. Then we go to Thomas. SQUAWK.",
+        "type": "voice",
+        "pan": "left"
+      }
+    ],
+    "choices": {
+      "keys": "scene1_get_keys",
+      "kitchen": "scene1_get_keys",
+      "counter": "scene1_get_keys",
+      "jingly": "scene1_get_keys",
+      "jingly things": "scene1_get_keys",
+      "food room": "scene1_get_keys",
+      "cane": "scene1_get_cane_no_keys",
+      "kane": "scene1_get_cane_no_keys",
+      "stick": "scene1_get_cane_no_keys",
+      "tappy stick": "scene1_get_cane_no_keys",
+      "door": "scene1_need_items",
+      "leave": "scene1_need_items",
+      "outside": "scene1_need_items",
+      "repeat": "scene1_hint",
+      "again": "scene1_hint",
+      "say again": "scene1_hint",
+      "what did you say": "scene1_hint"
+    },
+    "look": [
+      {
+        "file": "sfx/mango_chirp.wav",
+        "text": "Mango chirps and ruffles his feathers importantly.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_describe_apartment.wav",
+        "text": "SQUAWK. Okay! Looking! There is... the warm humming box. The tall cold box. The soft sitting things. Mango's perch. SQUAWK. Also the whooshy rectangle and the flat cold thing with jingly things on it. SQUAWK. That is everything. Very good description. Thomas is waiting. SQUAWK.",
+        "type": "voice",
+        "pan": "left"
+      }
+    ]
+  },
+  "scene1_need_items": {
+    "audio": [
+      {
+        "file": "sfx/mango_squawk_burst.wav",
+        "text": "Mango squawks urgently.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_not_ready.wav",
+        "text": "SQUAWK. Not ready! Need jingly things AND tappy stick! Thomas is waiting! Both things first! SQUAWK.",
+        "type": "voice",
+        "pan": "left"
+      }
+    ],
+    "choices": {
+      "keys": "scene1_get_keys",
+      "kitchen": "scene1_get_keys",
+      "counter": "scene1_get_keys",
+      "jingly": "scene1_get_keys",
+      "jingly things": "scene1_get_keys",
+      "cane": "scene1_get_cane_no_keys",
+      "door": "scene1_need_items",
+      "leave": "scene1_need_items",
+      "outside": "scene1_need_items",
+      "kane": "scene1_get_cane_no_keys",
+      "stick": "scene1_get_cane_no_keys",
+      "tappy stick": "scene1_get_cane_no_keys",
+      "repeat": "scene1_need_items",
+      "again": "scene1_need_items",
+      "say again": "scene1_need_items",
+      "what did you say": "scene1_need_items"
+    },
+    "look": [
+      {
+        "file": "sfx/mango_chirp.wav",
+        "text": "Mango chirps and ruffles his feathers importantly.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_describe_apartment.wav",
+        "text": "SQUAWK. Okay! Looking! There is... the warm humming box. The tall cold box. The soft sitting things. Mango's perch. SQUAWK. Also the whooshy rectangle and the flat cold thing with jingly things on it. SQUAWK. That is everything. Very good description. Thomas is waiting. SQUAWK.",
+        "type": "voice",
+        "pan": "left"
+      }
+    ]
+  },
+  "scene1_get_keys": {
+    "audio": [
+      {
+        "file": "sfx/keys_jingle.wav",
+        "text": "Keys jingle as you find them on the counter. Six bright metallic notes cascade.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "sfx/mango_squawk_burst.wav",
+        "text": "Mango squawks excitedly.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_keys_got.wav",
+        "text": "SQUAWK! Jingly things! Got them! Pocket! Now tappy stick! Then Thomas! SQUAWK SQUAWK.",
+        "type": "voice",
+        "pan": "left"
+      }
+    ],
+    "choices": {
+      "cane": "scene1_got_keys_get_cane",
+      "kane": "scene1_got_keys_get_cane",
+      "stick": "scene1_got_keys_get_cane",
+      "tappy stick": "scene1_got_keys_get_cane",
+      "door": "scene1_need_cane",
+      "leave": "scene1_need_cane",
+      "outside": "scene1_need_cane",
+      "what do i need": "scene1_need_cane",
+      "what now": "scene1_need_cane",
+      "repeat": "scene1_get_keys",
+      "again": "scene1_get_keys",
+      "say again": "scene1_get_keys",
+      "what did you say": "scene1_get_keys"
+    },
+    "look": [
+      {
+        "file": "sfx/mango_chirp.wav",
+        "text": "Mango chirps and ruffles his feathers importantly.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_describe_apartment.wav",
+        "text": "SQUAWK. Okay! Looking! There is... the warm humming box. The tall cold box. The soft sitting things. Mango's perch. SQUAWK. Also the whooshy rectangle and the flat cold thing with jingly things on it. SQUAWK. That is everything. Very good description. Thomas is waiting. SQUAWK.",
+        "type": "voice",
+        "pan": "left"
+      }
+    ]
+  },
+  "scene1_need_cane": {
+    "audio": [
+      {
+        "file": "sfx/mango_chirp.wav",
+        "text": "Mango chirps.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_need_cane.wav",
+        "text": "Tappy stick! Still need tappy stick! By the whooshy rectangle! Thomas can wait one more minute! Maybe! SQUAWK.",
+        "type": "voice",
+        "pan": "left"
+      }
+    ],
+    "choices": {
+      "cane": "scene1_got_keys_get_cane",
+      "kane": "scene1_got_keys_get_cane",
+      "stick": "scene1_got_keys_get_cane",
+      "tappy stick": "scene1_got_keys_get_cane",
+      "door": "scene1_need_cane",
+      "leave": "scene1_need_cane",
+      "outside": "scene1_need_cane",
+      "repeat": "scene1_need_cane",
+      "again": "scene1_need_cane",
+      "say again": "scene1_need_cane",
+      "what did you say": "scene1_need_cane"
+    },
+    "look": [
+      {
+        "file": "sfx/mango_chirp.wav",
+        "text": "Mango chirps and ruffles his feathers importantly.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_describe_apartment.wav",
+        "text": "SQUAWK. Okay! Looking! There is... the warm humming box. The tall cold box. The soft sitting things. Mango's perch. SQUAWK. Also the whooshy rectangle and the flat cold thing with jingly things on it. SQUAWK. That is everything. Very good description. Thomas is waiting. SQUAWK.",
+        "type": "voice",
+        "pan": "left"
+      }
+    ]
+  },
+  "scene1_get_cane_no_keys": {
+    "audio": [
+      {
+        "file": "sfx/mango_chirp.wav",
+        "text": "Mango chirps.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_cane_no_keys.wav",
+        "text": "Tappy stick! Yes! But also jingly things! Can't lock the door without jingly things! Thomas would not want the door unlocked! SQUAWK.",
+        "type": "voice",
+        "pan": "left"
+      }
+    ],
+    "choices": {
+      "keys": "scene1_got_keys_get_cane",
+      "kitchen": "scene1_got_keys_get_cane",
+      "counter": "scene1_got_keys_get_cane",
+      "jingly": "scene1_got_keys_get_cane",
+      "jingly things": "scene1_got_keys_get_cane",
+      "food room": "scene1_got_keys_get_cane",
+      "door": "scene1_need_items",
+      "leave": "scene1_need_items",
+      "outside": "scene1_need_items",
+      "repeat": "scene1_get_cane_no_keys",
+      "again": "scene1_get_cane_no_keys",
+      "say again": "scene1_get_cane_no_keys",
+      "what did you say": "scene1_get_cane_no_keys"
+    },
+    "look": [
+      {
+        "file": "sfx/mango_chirp.wav",
+        "text": "Mango chirps and ruffles his feathers importantly.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_describe_apartment.wav",
+        "text": "SQUAWK. Okay! Looking! There is... the warm humming box. The tall cold box. The soft sitting things. Mango's perch. SQUAWK. Also the whooshy rectangle and the flat cold thing with jingly things on it. SQUAWK. That is everything. Very good description. Thomas is waiting. SQUAWK.",
+        "type": "voice",
+        "pan": "left"
+      }
+    ]
+  },
+  "scene1_got_keys_get_cane": {
+    "audio": [
+      {
+        "file": "sfx/mango_chirp.wav",
+        "text": "Mango chirps.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_cane_ready.wav",
+        "text": "Tappy stick and Jingly's! Yes! Good! SQUAWK. Ready. We go to Thomas now.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_be_good.wav",
+        "text": "...Squawk. Mango will be good today.",
+        "type": "voice",
+        "pan": "left"
+      }
+    ],
+    "choices": {
+      "leave": "scene1_leave",
+      "open the door": "scene1_leave",
+      "go": "scene1_leave",
+      "door": "scene1_leave",
+      "outside": "scene1_leave",
+      "forward": "scene1_leave",
+      "repeat": "scene1_got_keys_get_cane",
+      "again": "scene1_got_keys_get_cane",
+      "say again": "scene1_got_keys_get_cane",
+      "what did you say": "scene1_got_keys_get_cane"
+    },
+    "look": [
+      {
+        "file": "sfx/mango_chirp.wav",
+        "text": "Mango chirps and ruffles his feathers importantly.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_describe_apartment.wav",
+        "text": "SQUAWK. Okay! Looking! There is... the warm humming box. The tall cold box. The soft sitting things. Mango's perch. SQUAWK. Also the whooshy rectangle and the flat cold thing with jingly things on it. SQUAWK. That is everything. Very good description. Thomas is waiting. SQUAWK.",
+        "type": "voice",
+        "pan": "left"
+      }
+    ]
+  },
+  "scene1_leave": {
+    "audio": [
+      {
+        "file": "ambience/city.wav",
+        "text": "City sounds flood in. Traffic, distant voices, a jackhammer far away, wind.",
+        "type": "environment",
+        "pan": "center"
+      }
+    ],
+    "choices": {
+      "cross": "scene2_attempt1",
+      "go": "scene2_attempt1",
+      "walk": "scene2_attempt1",
+      "forward": "scene2_attempt1",
+      "wait": "scene2_attempt1",
+      "listen": "scene2_attempt1"
+    },
+    "look": [
+      {
+        "file": "sfx/mango_chirp.wav",
+        "text": "Mango chirps and peers around.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_describe_intersection.wav",
+        "text": "SQUAWK. Okay! Very big loud flat place. Lots of fast metal things going WHOOSH. There is a man near us talking at a small rectangle he is holding. The flat place has a stripe on it but the metal things are still doing WHOOSH so we should not go yet. SQUAWK. Mango does not recommend the stripe right now. SQUAWK.",
+        "type": "voice",
+        "pan": "left"
+      }
+    ]
+  },
+  "scene2_attempt1": {
+    "audio": [
+      {
+        "file": "sfx/mango_squawk_burst.wav",
+        "text": "Mango squawks sharply.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_not_yet.wav",
+        "text": "SQUAWK. Fast metal things everywhere! Not yet!",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/marcus_first.wav",
+        "text": "Yeah I'm at Fifth and Broad right now. Just waiting for the light. Hold on\u2014 I think it changed\u2014 ...nope, never mind. Someone must've hit the crosswalk early. Still red.",
+        "type": "voice",
+        "pan": "right"
+      }
+    ],
+    "choices": {
+      "cross": "scene2_attempt2",
+      "listen": "scene2_attempt2",
+      "go": "scene2_attempt2",
+      "walk": "scene2_attempt2",
+      "forward": "scene2_attempt2",
+      "wait": "scene2_attempt2",
+      "stop": "scene2_attempt2",
+      "repeat": "scene2_attempt1",
+      "again": "scene2_attempt1"
+    },
+    "look": [
+      {
+        "file": "sfx/mango_chirp.wav",
+        "text": "Mango chirps and peers around.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_describe_intersection.wav",
+        "text": "SQUAWK. Okay! Very big loud flat place. Lots of fast metal things going WHOOSH. There is a man near us talking at a small rectangle he is holding. The flat place has a stripe on it but the metal things are still doing WHOOSH so we should not go yet. SQUAWK. Mango does not recommend the stripe right now. SQUAWK.",
+        "type": "voice",
+        "pan": "left"
+      }
+    ]
+  },
+  "scene2_attempt2": {
+    "audio": [
+      {
+        "file": "voices/mango_chirp_not_yet.wav",
+        "text": "Mango chirps nervously, not yet, tiny metal thing with two wheels!",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/marcus_second.wav",
+        "text": "Yeah yeah I'm still here. No I saw that movie\u2014 wait\u2014 oh the light's green\u2014 actually hold up I'm not moving yet, some bike just blew the red\u2014 ...okay NOW people are going, looks clear.",
+        "type": "voice",
+        "pan": "right"
+      }
+    ],
+    "choices": {
+      "cross": "scene2_cross_success",
+      "go": "scene2_cross_success",
+      "walk": "scene2_cross_success",
+      "forward": "scene2_cross_success",
+      "now": "scene2_cross_success",
+      "wait": "scene2_ready",
+      "stop": "scene2_ready",
+      "repeat": "scene2_attempt2",
+      "again": "scene2_attempt2"
+    },
+    "look": [
+      {
+        "file": "sfx/mango_chirp.wav",
+        "text": "Mango chirps and peers around.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_describe_intersection.wav",
+        "text": "SQUAWK. Okay! Very big loud flat place. Lots of fast metal things going WHOOSH. There is a man near us talking at a small rectangle he is holding. The flat place has a stripe on it but the metal things are still doing WHOOSH so we should not go yet. SQUAWK. Mango does not recommend the stripe right now. SQUAWK.",
+        "type": "voice",
+        "pan": "left"
+      }
+    ]
+  },
+  "scene2_ready": {
+    "choices": {
+      "cross": "scene2_cross_success",
+      "go": "scene2_cross_success",
+      "walk": "scene2_cross_success",
+      "forward": "scene2_cross_success",
+      "now": "scene2_cross_success",
+      "wait": "scene2_ready",
+      "stop": "scene2_ready"
+    },
+    "look": [
+      {
+        "file": "sfx/mango_chirp.wav",
+        "text": "Mango chirps and peers around.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_describe_intersection.wav",
+        "text": "SQUAWK. Okay! Very big loud flat place. Lots of fast metal things going WHOOSH. There is a man near us talking at a small rectangle he is holding. The flat place has a stripe on it but the metal things are still doing WHOOSH so we should not go yet. SQUAWK. Mango does not recommend the stripe right now. SQUAWK.",
+        "type": "voice",
+        "pan": "left"
+      }
+    ]
+  },
+  "scene2_cross_success": {
+    "audio": [
+      {
+        "file": "sfx/footsteps_pavement.wav",
+        "text": "Your footsteps strike the pavement in quick rhythm.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "sfx/mango_squawk_burst.wav",
+        "text": "Mango squawks frantically.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_go_go.wav",
+        "text": "SQUAWK. Go go go! Fast! Other side! Thomas is waiting! SQUAWK SQUAWK.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "sfx/footsteps_pavement.wav",
+        "text": "Your footsteps strike the pavement in quick rhythm.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "voices/marcus_respect.wav",
+        "text": "Oh\u2014 hold on a second\u2014 dude, were you just... wait, are you blind? That was actually really impressive. Seriously, respect.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "sfx/mango_chirp_smug.wav",
+        "text": "Mango chirps smugly.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_obviously.wav",
+        "text": "SQUAWK. Obviously. SQUAWK.",
+        "type": "voice",
+        "pan": "left"
+      }
+    ],
+    "next": "scene2_after_cross"
+  },
+  "scene2_after_cross": {
+    "audio": [
+      {
+        "file": "voices/mango_describe_post_cross.wav",
+        "text": "placehold",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "sfx/footsteps_pavement.wav",
+        "text": "placehold.",
+        "type": "sfx",
+        "pan": "center"
+      }
+    ],
+    "next": "scene3_descend"
+  },
+  "scene3_descend": {
+    "audio": [
+      {
+        "file": "ambience/subway.wav",
+        "text": "The subway opens around you. A low tunnel rumble. Distant trains. Turnstile clicks. Footsteps echo.",
+        "type": "environment",
+        "pan": "center"
+      },
+      {
+        "file": "voices/ida_announcements.wav",
+        "text": "These announcements. Forty years on this subway and I have never once understood a single word. Not one word.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "sfx/silence_window.wav",
+        "text": "Silence. The warmth from the window sits on your face.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "voices/ida_hurry.wav",
+        "text": "You look like you're in a hurry, honey.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "sfx/mango_squawk_burst.wav",
+        "text": "Mango squawks.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_thomas_hurry.wav",
+        "text": "SQUAWK. Thomas needs us! Hurry hurry hurry! SQUAWK.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/ida_bird_reaction.wav",
+        "text": "...Did that bird just talk?",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "sfx/mango_squawk_single.wav",
+        "text": "SQUAWK.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/ida_new_one.wav",
+        "text": "Well. I've lived in New York forty years and that's a new one. You need help getting somewhere, honey?",
+        "type": "voice",
+        "pan": "center"
+      }
+    ],
+    "choices": {
+      "hospital": "scene3_tell_ida",
+      "repeat": "scene3_descend",
+      "again": "scene3_descend",
+      "say again": "scene3_descend",
+      "what did you say": "scene3_descend"
+    },
+    "look": [
+      {
+        "file": "sfx/mango_chirp.wav",
+        "text": "Mango chirps and looks around the subway platform.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_describe_subway.wav",
+        "text": "SQUAWK. Underground place. Very echoey. Smells like metal and old air and too many people. There are rails in the ground for the big metal worms. An old woman is very close and has not stopped talking since we arrived. There is rumbling from deep in the tunnel. SQUAWK. Thomas is not here. Thomas is somewhere else. We must find the right worm. SQUAWK.",
+        "type": "voice",
+        "pan": "left"
+      }
+    ]
+  },
+  "scene3_tell_ida": {
+    "audio": [
+      {
+        "file": "voices/ida_deduces_hospital.wav",
+        "text": "Hospital \u2014 okay. The only hospital people rush to around here is St. Michael's on Fifth. If someone called you in a hurry, that's where they'll have taken him. M train will get you there, even with the signal problems today.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "sfx/mango_chirp.wav",
+        "text": "Mango chirps.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_st_michaels.wav",
+        "text": "SQUAWK. St. Michael's! That is where Thomas is! M train! SQUAWK.",
+        "type": "voice",
+        "pan": "left"
+      }
+    ],
+    "choices": {
+      "yes": "scene3_ida_response",
+      "okay": "scene3_ida_response",
+      "saint michaels": "scene3_ida_response",
+      "st michaels": "scene3_ida_response",
+      "m train": "scene3_ida_response",
+      "which platform": "scene3_ida_response",
+      "repeat": "scene3_tell_ida",
+      "again": "scene3_tell_ida",
+      "say again": "scene3_tell_ida",
+      "what did you say": "scene3_tell_ida"
+    },
+    "look": [
+      {
+        "file": "sfx/mango_chirp.wav",
+        "text": "Mango chirps and looks around the subway platform.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_describe_subway.wav",
+        "text": "SQUAWK. Underground place. Very echoey. Smells like metal and old air and too many people. There are rails in the ground for the big metal worms. An old woman is very close and has not stopped talking since we arrived. There is rumbling from deep in the tunnel. SQUAWK. Thomas is not here. Thomas is somewhere else. We must find the right worm. SQUAWK.",
+        "type": "voice",
+        "pan": "left"
+      }
+    ]
+  },
+  "scene3_ida_response": {
+    "audio": [
+      {
+        "file": "voices/ida_m_train.wav",
+        "text": "St. Michael's it is. M train, end of the platform. Even delayed it's your only option.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "sfx/footsteps_train_floor.wav",
+        "text": "Your footsteps ring hollow and metallic on the train floor.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "sfx/train_arrive.wav",
+        "text": "A distant rumble grows louder. Wind rushes through the tunnel. Brakes squeal. Doors hiss open.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "sfx/mango_squawk_burst.wav",
+        "text": "Mango squawks.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_train.wav",
+        "text": "SQUAWK. Train! Big loud metal worm! That one! Get that one! It goes to Thomas! SQUAWK.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "sfx/cloth_rustle.wav",
+        "text": "Ida takes your arm gently and steers you toward the doors without asking.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "voices/ida_get_on.wav",
+        "text": "I have a son who doesn't like help either. Here. Get on the train, this way.",
+        "type": "voice",
+        "pan": "center"
+      }
+    ],
+    "choices": {
+      "board": "scene3_on_train",
+      "get on": "scene3_on_train",
+      "yes": "scene3_on_train",
+      "okay": "scene3_on_train",
+      "train": "scene3_on_train",
+      "forward": "scene3_on_train",
+      "repeat": "scene3_ida_response",
+      "again": "scene3_ida_response",
+      "say again": "scene3_ida_response",
+      "what did you say": "scene3_ida_response"
+    },
+    "look": [
+      {
+        "file": "sfx/mango_chirp.wav",
+        "text": "Mango chirps and looks around the subway platform.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_describe_subway.wav",
+        "text": "SQUAWK. Underground place. Very echoey. Smells like metal and old air and too many people. There are rails in the ground for the big metal worms. An old woman is very close and has not stopped talking since we arrived. There is rumbling from deep in the tunnel. SQUAWK. Thomas is not here. Thomas is somewhere else. We must find the right worm. SQUAWK.",
+        "type": "voice",
+        "pan": "left"
+      }
+    ]
+  },
+  "scene3_on_train": {
+    "audio": [
+      {
+        "file": "sfx/footsteps_train_floor.wav",
+        "text": "Your footsteps ring hollow and metallic on the train floor.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "sfx/doors_hiss_shut.wav",
+        "text": "The doors hiss shut.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "sfx/train_departs.wav",
+        "text": "The train rumbles and accelerates into the dark.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "voices/ida_everyone_important.wav",
+        "text": "Forty years on this subway. You know what I've learned? Everyone is going somewhere important. Nobody acts like it, but they are.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "sfx/mango_chirp_thoughtful.wav",
+        "text": "Mango chirps. Quiet. Thoughtful.",
+        "type": "voice",
+        "pan": "left"
+      }
+    ],
+    "choices": {
+      "continue": "scene4_arrive",
+      "go": "scene4_arrive",
+      "exit": "scene4_arrive",
+      "get off": "scene4_arrive",
+      "hospital": "scene4_arrive",
+      "off": "scene4_arrive",
+      "repeat": "scene3_on_train",
+      "again": "scene3_on_train",
+      "say again": "scene3_on_train",
+      "what did you say": "scene3_on_train"
+    },
+    "look": [
+      {
+        "file": "sfx/mango_chirp.wav",
+        "text": "Mango chirps and peers around the carriage.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_describe_train.wav",
+        "text": "SQUAWK. We are inside the metal worm. It is moving very fast through the dark. There are seats made of hard smooth stuff. The lights are very buzzy. The old woman who grabbed your arm is still here, she is talking to someone else now. SQUAWK. We are going to Thomas. That is good. Mango is ready. SQUAWK.",
+        "type": "voice",
+        "pan": "left"
+      }
+    ]
+  },
+  "scene4_arrive": {
+    "audio": [
+      {
+        "file": "sfx/train_slows.wav",
+        "text": "The train slows. Brakes. Doors open.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "sfx/footsteps_pavement.wav",
+        "text": "Your footsteps strike the pavement in quick rhythm.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "ambience/construction.wav",
+        "text": "City sounds return. But louder now, harsher. Jackhammers. Scaffolding rattling. Workers shouting.",
+        "type": "environment",
+        "pan": "center"
+      },
+      {
+        "file": "sfx/mango_squawk_anxious.wav",
+        "text": "Mango squawks, unsettled.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_different.wav",
+        "text": "SQUAWK. Different. Smells different. Loud. Too loud. Thomas must be very close. SQUAWK.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "sfx/impact_thud.wav",
+        "text": "A sudden impact. Someone's shoulder, hard, no warning.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "sfx/cane_skitter.wav",
+        "text": "Your cane skitters across the pavement, ringing as it rolls away to the right.",
+        "type": "voice",
+        "pan": "right"
+      },
+      {
+        "file": "voices/sidewalk_guy.wav",
+        "text": "Watch where you're going!",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "sfx/mango_chaos.wav",
+        "text": "Mango erupts. The longest squawk burst in the game.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_bad_man.wav",
+        "text": "SQUAWK SQUAWK SQUAWK. Bad man! Terrible man! Mango remembers your voice! SQUAWK.",
+        "type": "voice",
+        "pan": "left"
+      }
+    ],
+    "choices": {
+      "right": "scene4_get_cane",
+      "reach right": "scene4_get_cane",
+      "forward": "scene4_get_cane",
+      "grab it": "scene4_get_cane",
+      "crouch": "scene4_get_cane",
+      "feel around": "scene4_get_cane",
+      "cane": "scene4_get_cane",
+      "kane": "scene4_get_cane",
+      "stick": "scene4_get_cane",
+      "find cane": "scene4_get_cane",
+      "find it": "scene4_get_cane",
+      "repeat": "scene4_arrive",
+      "again": "scene4_arrive",
+      "say again": "scene4_arrive",
+      "what did you say": "scene4_arrive"
+    },
+    "look": [
+      {
+        "file": "sfx/mango_squawk_burst.wav",
+        "text": "Mango squawks anxiously.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_describe_before_cane.wav",
+        "text": "SQUAWK. Loud bad machines everywhere. Smells like hospital though \u2014 clean smell is there, somewhere ahead. The tappy stick is on the ground to the right. Mango can hear it still ringing. SQUAWK.",
+        "type": "voice",
+        "pan": "left"
+      }
+    ]
+  },
+  "scene4_get_cane": {
+    "audio": [
+      {
+        "file": "sfx/hands_pavement.wav",
+        "text": "Your hands scrape along the pavement.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "sfx/mango_chirp_relieved.wav",
+        "text": "Mango chirps with relief.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_helpful.wav",
+        "text": "SQUAWK. Got it. Mango was very helpful just now. SQUAWK.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "sfx/automatic_doors_open.wav",
+        "text": "Automatic doors hiss open intermittently, further left.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/vendor_side_entrance.wav",
+        "text": "Coffee! Hot coffee! Side entrance is open folks, main doors are closed today\u2014",
+        "type": "voice",
+        "pan": "left"
+      }
+    ],
+    "choices": {
+      "side entrance": "scene4_enter_hospital",
+      "entrance": "scene4_enter_hospital",
+      "side": "scene4_enter_hospital",
+      "left": "scene4_enter_hospital",
+      "follow the voice": "scene4_enter_hospital",
+      "vendor": "scene4_enter_hospital",
+      "coffee": "scene4_enter_hospital",
+      "doors": "scene4_enter_hospital",
+      "repeat": "scene4_get_cane",
+      "again": "scene4_get_cane",
+      "say again": "scene4_get_cane",
+      "what did you say": "scene4_get_cane"
+    },
+    "look": [
+      {
+        "file": "sfx/mango_chirp.wav",
+        "text": "Mango chirps.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_describe_after_cane.wav",
+        "text": "SQUAWK. Front doors are blocked by the bad clattery machines. But there is another way. To the left. Doors opening and closing. Clean smell getting stronger. A man is shouting about hot drinks near the other door. The bad man is gone. Mango will remember his voice forever. SQUAWK.",
+        "type": "voice",
+        "pan": "left"
+      }
+    ]
+  },
+  "scene4_enter_hospital": {
+    "audio": [
+      {
+        "file": "sfx/automatic_doors_open.wav",
+        "text": "Automatic doors hiss open.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "ambience/hospital.wav",
+        "text": "Construction noise cuts off abruptly. Hospital ambience fills the space. Fluorescent hum. Distant PA. Slow monitor beeps. Soft footsteps on clean floors.",
+        "type": "environment",
+        "pan": "center"
+      },
+      {
+        "file": "sfx/mango_chirp_soft.wav",
+        "text": "Mango chirps softly.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_inside_safe.wav",
+        "text": "...Squawk. Inside. Safe. Thomas is in here somewhere. Squawk.",
+        "type": "voice",
+        "pan": "left"
+      }
+    ],
+    "choices": {
+      "continue": "scene5_lobby",
+      "forward": "scene5_lobby",
+      "find someone": "scene5_lobby",
+      "help": "scene5_lobby",
+      "desk": "scene5_lobby",
+      "reception": "scene5_lobby",
+      "repeat": "scene4_enter_hospital",
+      "again": "scene4_enter_hospital",
+      "say again": "scene4_enter_hospital",
+      "what did you say": "scene4_enter_hospital"
+    },
+    "look": [
+      {
+        "file": "sfx/mango_chirp.wav",
+        "text": "Mango chirps and looks around the entrance.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_describe_entrance.wav",
+        "text": "SQUAWK. Big clean room. Smells like clean things and also sad things. The floor is very smooth \u2014 tappy stick will love this floor. There is a desk ahead with a person behind it. There are corridors going lots of ways. SQUAWK. Thomas Reed is somewhere in this building. We should ask the desk person where. SQUAWK.",
+        "type": "voice",
+        "pan": "left"
+      }
+    ]
+  },
+  "scene5_lobby": {
+    "audio": [
+      {
+        "file": "sfx/nurse_footsteps_approaching.wav",
+        "text": "Quick soft footsteps approach.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "voices/carmen_help.wav",
+        "text": "Hi there. Can I help you find someone?",
+        "type": "voice",
+        "pan": "center"
+      }
+    ],
+    "choices": {
+      "yes": "scene5_carmen_asks_name",
+      "my father": "scene5_carmen_asks_name",
+      "dad": "scene5_carmen_asks_name",
+      "thomas": "scene5_carmen_asks_name",
+      "looking for someone": "scene5_carmen_asks_name",
+      "please": "scene5_carmen_asks_name",
+      "help": "scene5_carmen_asks_name",
+      "repeat": "scene5_lobby",
+      "again": "scene5_lobby",
+      "say again": "scene5_lobby",
+      "what did you say": "scene5_lobby"
+    },
+    "look": [
+      {
+        "file": "sfx/mango_chirp.wav",
+        "text": "Mango chirps.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_describe_lobby.wav",
+        "text": "SQUAWK. Big inside place. Very clean smell. Very buzzy light sound. Lots of corridors going different directions. A nice-voiced person is standing very close and wants to help. SQUAWK. Thomas Reed is in here. Thomas. Thomas Reed. We just need to tell the nice person that name. SQUAWK.",
+        "type": "voice",
+        "pan": "left"
+      }
+    ]
+  },
+  "scene5_carmen_asks_name": {
+    "audio": [
+      {
+        "file": "voices/carmen_what_name.wav",
+        "text": "Of course. What's his name?",
+        "type": "voice",
+        "pan": "center"
+      }
+    ],
+    "choices": {
+      "reed": "scene5_correct_name",
+      "thomas reed": "scene5_correct_name",
+      "thomas": "scene5_correct_name",
+      "my dad": "scene5_no_name",
+      "father": "scene5_no_name",
+      "i don't know": "scene5_no_name",
+      "repeat": "scene5_carmen_asks_name",
+      "again": "scene5_carmen_asks_name",
+      "say again": "scene5_carmen_asks_name",
+      "what did you say": "scene5_carmen_asks_name"
+    },
+    "look": [
+      {
+        "file": "sfx/mango_squawk_burst.wav",
+        "text": "Mango squawks emphatically.",
+        "type": "voice",
+        "pan": "left"
+      }
+    ]
+  },
+  "scene5_partial_name": {
+    "audio": [
+      {
+        "file": "voices/carmen_partial.wav",
+        "text": "Thomas? Do you have a last name? We have a few patients named Thomas here.",
+        "type": "voice",
+        "pan": "center"
+      }
+    ],
+    "choices": {
+      "thomas": "scene5_correct_name",
+      "thomas reed": "scene5_correct_name",
+      "repeat": "scene5_partial_name",
+      "again": "scene5_partial_name",
+      "say again": "scene5_partial_name",
+      "what did you say": "scene5_partial_name"
+    },
+    "look": [
+      {
+        "file": "sfx/mango_squawk_burst.wav",
+        "text": "Mango squawks emphatically.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_name_hint.wav",
+        "text": "SQUAWK. Thomas! The name is Thomas! Thomas Reed! The phone said Thomas Reed this morning! Mango was listening! SQUAWK. Say Thomas Reed! SQUAWK.",
+        "type": "voice",
+        "pan": "left"
+      }
+    ]
+  },
+  "scene5_no_name": {
+    "audio": [
+      {
+        "file": "voices/carmen_no_name.wav",
+        "text": "Take your time. Even a first name would help me narrow it down.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "sfx/mango_chirp.wav",
+        "text": "Mango chirps urgently.",
+        "type": "voice",
+        "pan": "left"
+      }
+    ],
+    "choices": {
+      "thomas": "scene5_correct_name",
+      "thomas reed": "scene5_correct_name",
+      "repeat": "scene5_no_name",
+      "again": "scene5_no_name",
+      "say again": "scene5_no_name",
+      "what did you say": "scene5_no_name"
+    },
+    "look": [
+      {
+        "file": "sfx/mango_squawk_burst.wav",
+        "text": "Mango squawks emphatically.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_name_hint.wav",
+        "text": "SQUAWK. Thomas! The name is Thomas! Thomas Reed! The phone said Thomas Reed this morning! Mango was listening! SQUAWK. Say Thomas Reed! SQUAWK.",
+        "type": "voice",
+        "pan": "left"
+      }
+    ]
+  },
+  "scene5_correct_name": {
+    "audio": [
+      {
+        "file": "voices/carmen_ward_c.wav",
+        "text": "Thomas Reed \u2014 yes, Ward C, room 14. I can take you there.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "sfx/walking_together.wav",
+        "text": "Two sets of footsteps. Your cane tapping. The corridor echoes.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "type": "stop_ambience"
+      },
+      {
+        "file": "voices/carmen_he_asked.wav",
+        "text": "He's been asking if you'd come. I told him you would.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "sfx/mango_chirp_charmed.wav",
+        "text": "Mango chirps, charmed.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_nice_voice.wav",
+        "text": "Squawk. Nice voice. SQUAWK. Mango likes this one.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/carmen_thank_you.wav",
+        "text": "...Thank you, I think.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "sfx/footsteps_corridor.wav",
+        "text": "Footsteps continue. A turn. Another corridor. Slowing.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "voices/carmen_room_14.wav",
+        "text": "Here we are. Room 14. I'll be right outside if you need anything.",
+        "type": "voice",
+        "pan": "center"
+      }
+    ],
+    "choices": {
+      "enter": "scene6_room",
+      "open": "scene6_room",
+      "go": "scene6_room",
+      "yes": "scene6_room",
+      "okay": "scene6_room",
+      "dad": "scene6_room",
+      "forward": "scene6_room",
+      "repeat": "scene5_correct_name",
+      "again": "scene5_correct_name",
+      "say again": "scene5_correct_name",
+      "what did you say": "scene5_correct_name"
+    },
+    "look": [
+      {
+        "file": "sfx/mango_chirp.wav",
+        "text": "Mango chirps quietly.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "voices/mango_describe_corridor.wav",
+        "text": "SQUAWK. Long corridor. Very echoey. Smells very clean. The nice-voiced person is walking beside us and not making us feel bad about needing help. There are doors on both sides. The beeping sounds are getting a little louder the further we go. SQUAWK. Thomas is behind one of these doors. Mango is very quiet now. Squawk.",
+        "type": "voice",
+        "pan": "left"
+      }
+    ]
+  },
+  "scene6_room": {
+    "audio": [
+      {
+        "file": "sfx/door_open_and_shut.wav",
+        "text": "The door opens. A softer creak than the apartment door. Much quieter.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "ambience/hospital_room.wav",
+        "text": "A very small room. One window. A heart monitor beeps slowly and steadily.",
+        "type": "environment",
+        "pan": "center"
+      },
+      {
+        "file": "sfx/breathing_slow.wav",
+        "text": "Slow breathing. Laboured, but present. Familiar.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "sfx/chair_sit.wav",
+        "text": "You find the chair by feel. Sit.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "voices/dad_knew_youd_come.wav",
+        "text": "...I knew you'd come.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "sfx/silence_window.wav",
+        "text": "Silence. The warmth from the window sits on your face.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "voices/dad_did_mango_behave.wav",
+        "text": "Did Mango behave?",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "sfx/silence_window.wav",
+        "text": "Silence. The warmth from the window sits on your face.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "voices/mango_squawk_small.wav",
+        "text": "...Squawk.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "sfx/dad_laugh_cough.wav",
+        "text": "Dad laughs softly. Then a cough. Then he settles.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "sfx/silence_window.wav",
+        "text": "Silence. The warmth from the window sits on your face.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "voices/dad_seven_years_old.wav",
+        "text": "You know what I thought about this morning? The week you turned seven. You memorised every crack in the sidewalk between our building and the school. Three blocks. You never missed a step after that.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "sfx/silence_window.wav",
+        "text": "Silence. The warmth from the window sits on your face.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "voices/dad_walked_behind.wav",
+        "text": "I used to walk behind you sometimes. Just to watch. You never knew.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "sfx/silence_window.wav",
+        "text": "Silence. The warmth from the window sits on your face.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "voices/dad_never_waited.wav",
+        "text": "You never waited for anyone to show you the world.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "voices/dad_find_your_way.wav",
+        "text": "I always knew you'd find your way.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "type": "stop_ambience"
+      },
+      {
+        "file": "sfx/monitor_flatline.wav",
+        "text": "The monitor flatlines. A single sustained tone. It holds for three seconds. Then fades.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "voices/mango_squawk_small.wav",
+        "text": "...Squawk.",
+        "type": "voice",
+        "pan": "left"
+      },
+      {
+        "file": "sfx/long_silence.wav",
+        "text": "Silence.",
+        "type": "voice",
+        "pan": "center"
+      },
+      {
+        "file": "voices/developer_message.wav",
+        "text": "Thank you for playing BLIND. You found your way.",
+        "type": "voice",
+        "pan": "center"
+      }
+    ]
+  }
+}
